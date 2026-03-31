@@ -1,6 +1,6 @@
 ## 🐎 Grafo do Cavalo (Tabuleiro 3x3)
 
-Modelagem do grafo de movimentação de uma peça de cavalo em um tabuleiro de xadrez 3 × 3, utilizando algoritmos de busca em profundidade (DFS) e busca em largura (BFS) em Python.
+modelagem e análise técnica do Grafo do Cavalo em um tabuleiro de xadrez 3X3, través da implementação de algoritmos fundamentais de teoria dos grafos, utilizando algoritmos de busca em profundidade (DFS) e busca em largura (BFS) em Python.
 
 ---
 
