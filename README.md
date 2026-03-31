@@ -1,4 +1,4 @@
-Grafo do Cavalo (Tabuleiro 3x3)
+# 🐎 Grafo do Cavalo (Tabuleiro 3x3)
 
 Modelagem do grafo de movimentação de uma peça de cavalo em um tabuleiro de xadrez 3 × 3, utilizando algoritmos de busca em profundidade (DFS) e busca em largura (BFS) em Python.
 
@@ -14,17 +14,22 @@ Identificar casas isoladas
 Detectar ciclos de movimentação
 Calcular a distância mínima entre vértices
 
+## 🧩 Estrutura do Projeto
+
 trabalho-bfs-dfs/
-├── README.md
-├── dados/
-│   └── xadrez.txt             # Grafo no formato algs4
-└── src/
-    ├── main.py                # Programa principal
-    ├── graph.py               # Estrutura do grafo
-    ├── cc.py                  # Componentes conexas (DFS)
-    ├── cycle.py               # Detecção de ciclos (DFS)
-    ├── depth_first_paths.py   # Caminhos via DFS
-    └── breadth_first_paths.py # Caminhos via BFS (distância mínima)
+│
+├── dados/                     # Arquivo de entrada do grafo
+│   └── xadrez.txt             # Grafo no formato algs4 (V, E, arestas)
+│
+├── src/                       # Código-fonte do projeto
+│   ├── main.py                # Ponto de entrada (execução das análises)
+│   ├── graph.py               # Estrutura de dados do grafo
+│   ├── cc.py                  # Componentes conexas (DFS)
+│   ├── cycle.py               # Detecção de ciclos (DFS)
+│   ├── depth_first_paths.py   # Caminhos usando DFS
+│   ├── breadth_first_paths.py # Caminhos mínimos usando BFS
+│
+└── README.md                  # Documentação do projeto
 
 
 🧭 Mapeamento dos Vértices (3×3)
@@ -39,7 +44,7 @@ trabalho-bfs-dfs/
 7	(2,1)	Baixo centro
 8	(2,2)	Canto inferior direito
 
-🔗 Arestas (Movimentos Válidos do Cavalo)
+#🔗 Arestas (Movimentos Válidos do Cavalo)
 No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ciclo entre as bordas:
 
 0 - 5   (0,0) → (1,2)
@@ -50,7 +55,6 @@ No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ci
 2 - 7   (0,2) → (2,1)
 3 - 8   (1,0) → (2,2)
 5 - 6   (1,2) → (2,0)
-
 ⚠️ O vértice 4 (centro) não possui arestas → nó isolado
 
 ▶️ Como Executar
