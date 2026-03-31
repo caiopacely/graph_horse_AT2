@@ -15,6 +15,7 @@ Detectar ciclos de movimentação
 Calcular a distância mínima entre vértices
 
 ## 🧩 Estrutura do Projeto
+
 ```
 trabalho-bfs-dfs/
 ├── dados/                       # Arquivo de entrada do grafo
@@ -30,6 +31,8 @@ trabalho-bfs-dfs/
 ```
 
 ##🧭 Mapeamento dos Vértices (3×3)
+
+```
 Índice	Coordenada	Posição
 0	(0,0)	Canto superior esquerdo
 1	(0,1)	Topo centro
@@ -40,8 +43,10 @@ trabalho-bfs-dfs/
 6	(2,0)	Canto inferior esquerdo
 7	(2,1)	Baixo centro
 8	(2,2)	Canto inferior direito
+```
 
 ##🔗 Arestas (Movimentos Válidos do Cavalo)
+
 No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ciclo entre as bordas:
 ```
 0 - 5   (0,0) → (1,2)
@@ -56,13 +61,11 @@ No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ci
 ```
 
 #▶️ Como Executar
+
 ```
-Clone o repositório
-git clone https://github.com/caiopacely/graph_horse_movements.git
-Acesse a pasta
-cd trabalho-bfs-dfs-main/src
-Execute o programa
-python main.py
+Clone o repositório: git clone https://github.com/caiopacely/graph_horse_movements.git
+Acesse a pasta: cd trabalho-bfs-dfs-main/src
+Execute o programa: python main.py
 ```
 ## ❓ Perguntas Respondidas
 
@@ -85,6 +88,7 @@ DFS	Explora profundamente (não garante menor caminho)
 BFS	Encontra o menor caminho
 
 #📚 Referência
+
 ```
 Implementação baseada nos algoritmos de:
 Robert Sedgewick
