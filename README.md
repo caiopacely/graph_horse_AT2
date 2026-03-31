@@ -1,8 +1,16 @@
-# 🐎 Grafo do Cavalo (Tabuleiro 3x3)
+## 🐎 Grafo do Cavalo (Tabuleiro 3x3)
 
 Modelagem do grafo de movimentação de uma peça de cavalo em um tabuleiro de xadrez 3 × 3, utilizando algoritmos de busca em profundidade (DFS) e busca em largura (BFS) em Python.
 
-📌 Sobre o Projeto
+---
+
+## Apresentação
+
+🔗 **[Assista à apresentação do trabalho aqui](https://www.youtube.com/watch?v=PSVaUfwmq58)**
+
+---
+
+##📌 Sobre o Projeto
 
 O programa modela as 9 casas de um tabuleiro 3×3 como um grafo não-direcionado:
 Vértices: representam as posições no tabuleiro (row, col)
@@ -60,39 +68,23 @@ No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ci
 ⚠️ O vértice 4 (centro) não possui arestas → nó isolado
 ```
 
-#▶️ Como Executar
+##▶️ Como Executar
 
 ```
 Clone o repositório: git clone https://github.com/caiopacely/graph_horse_movements.git
 Acesse a pasta: cd trabalho-bfs-dfs-main/src
 Execute o programa: python main.py
 ```
-## ❓ Perguntas Respondidas
 
-O programa lê o arquivo `xadrez.txt` e mostra no console:
+## Perguntas Respondidas
 
-* **Lista de Adjacência:** como os vértices do grafo estão conectados.
-
-* **Componentes Conexas:** quantidade de componentes e quais vértices pertencem a cada uma (incluindo o vértice 4 isolado).
-
-* **Distância Mínima:** menor caminho entre `(0,0)` e `(2,2)` usando BFS.
-
-* **Análise de Ciclo:** informa se o grafo possui ciclo e sua complexidade.
-
-* **Vértices do Ciclo:** mostra um ciclo encontrado, caso exista.
+1. Qual é a lista de adjacência do grafo (como os vértices estão conectados)?
+2. Quantas componentes conexas existem e quais vértices pertencem a cada uma?
+3. Qual é a distância mínima entre `(0,0)` e `(2,2)` utilizando BFS?
+4. O grafo possui ciclo?
+5. Quais são os vértices de um ciclo encontrado no grafo?
 
 
-🔹 DFS vs BFS
-Algoritmo	Característica
-DFS	Explora profundamente (não garante menor caminho)
-BFS	Encontra o menor caminho
+## Referência
 
-#📚 Referência
-
-```
-Implementação baseada nos algoritmos de:
-Robert Sedgewick
-Kevin Wayne
-📍 Princeton University
-📦 Biblioteca: algs4
-```
+Estrutura e nomenclatura baseadas na biblioteca [algs4](https://algs4.cs.princeton.edu/home/) de Sedgewick & Wayne.
