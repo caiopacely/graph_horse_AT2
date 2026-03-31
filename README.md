@@ -15,7 +15,7 @@ Detectar ciclos de movimentação
 Calcular a distância mínima entre vértices
 
 ## 🧩 Estrutura do Projeto
-
+```
 trabalho-bfs-dfs/
 ├── dados/                       # Arquivo de entrada do grafo
 │   └── xadrez.txt               # Grafo no formato algs4 (V, E, arestas)
@@ -27,7 +27,7 @@ trabalho-bfs-dfs/
 │   ├── depth_first_paths.py     # Caminhos usando DFS
 │   └── breadth_first_paths.py   # Caminhos mínimos usando BFS
 └── README.md                    # Documentação do projeto
-
+```
 
 ##🧭 Mapeamento dos Vértices (3×3)
 Índice	Coordenada	Posição
@@ -43,7 +43,7 @@ trabalho-bfs-dfs/
 
 ##🔗 Arestas (Movimentos Válidos do Cavalo)
 No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ciclo entre as bordas:
-
+```
 0 - 5   (0,0) → (1,2)
 0 - 7   (0,0) → (2,1)
 1 - 6   (0,1) → (2,0)
@@ -53,15 +53,17 @@ No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ci
 3 - 8   (1,0) → (2,2)
 5 - 6   (1,2) → (2,0)
 ⚠️ O vértice 4 (centro) não possui arestas → nó isolado
+```
 
-##▶️ Como Executar
+#▶️ Como Executar
+```
 Clone o repositório
 git clone https://github.com/caiopacely/graph_horse_movements.git
 Acesse a pasta
 cd trabalho-bfs-dfs-main/src
-# Execute o programa
+Execute o programa
 python main.py
-
+```
 ## ❓ Perguntas Respondidas
 
 O programa lê o arquivo `xadrez.txt` e mostra no console:
@@ -82,10 +84,11 @@ Algoritmo	Característica
 DFS	Explora profundamente (não garante menor caminho)
 BFS	Encontra o menor caminho
 
-📚 Referência
-
+#📚 Referência
+```
 Implementação baseada nos algoritmos de:
 Robert Sedgewick
 Kevin Wayne
 📍 Princeton University
 📦 Biblioteca: algs4
+```
