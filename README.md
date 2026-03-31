@@ -17,22 +17,19 @@ Calcular a distância mínima entre vértices
 ## 🧩 Estrutura do Projeto
 
 trabalho-bfs-dfs/
-│
-├── dados/                     # Arquivo de entrada do grafo
-│   └── xadrez.txt             # Grafo no formato algs4 (V, E, arestas)
-│
-├── src/                       # Código-fonte do projeto
-│   ├── main.py                # Ponto de entrada (execução das análises)
-│   ├── graph.py               # Estrutura de dados do grafo
-│   ├── cc.py                  # Componentes conexas (DFS)
-│   ├── cycle.py               # Detecção de ciclos (DFS)
-│   ├── depth_first_paths.py   # Caminhos usando DFS
-│   ├── breadth_first_paths.py # Caminhos mínimos usando BFS
-│
-└── README.md                  # Documentação do projeto
+├── dados/                       # Arquivo de entrada do grafo
+│   └── xadrez.txt               # Grafo no formato algs4 (V, E, arestas)
+├── src/                         # Código-fonte do projeto
+│   ├── main.py                  # Ponto de entrada (execução das análises)
+│   ├── graph.py                 # Estrutura de dados do grafo
+│   ├── cc.py                    # Componentes conexas (DFS)
+│   ├── cycle.py                 # Detecção de ciclos (DFS)
+│   ├── depth_first_paths.py     # Caminhos usando DFS
+│   └── breadth_first_paths.py   # Caminhos mínimos usando BFS
+└── README.md                    # Documentação do projeto
 
 
-🧭 Mapeamento dos Vértices (3×3)
+##🧭 Mapeamento dos Vértices (3×3)
 Índice	Coordenada	Posição
 0	(0,0)	Canto superior esquerdo
 1	(0,1)	Topo centro
@@ -44,7 +41,7 @@ trabalho-bfs-dfs/
 7	(2,1)	Baixo centro
 8	(2,2)	Canto inferior direito
 
-#🔗 Arestas (Movimentos Válidos do Cavalo)
+##🔗 Arestas (Movimentos Válidos do Cavalo)
 No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ciclo entre as bordas:
 
 0 - 5   (0,0) → (1,2)
@@ -57,10 +54,10 @@ No tabuleiro 3×3, o cavalo possui apenas 8 conexões possíveis, formando um ci
 5 - 6   (1,2) → (2,0)
 ⚠️ O vértice 4 (centro) não possui arestas → nó isolado
 
-▶️ Como Executar
-# Clone o repositório
+##▶️ Como Executar
+Clone o repositório
 git clone https://github.com/caiopacely/graph_horse_movements.git
-# Acesse a pasta
+Acesse a pasta
 cd trabalho-bfs-dfs-main/src
 # Execute o programa
 python main.py
